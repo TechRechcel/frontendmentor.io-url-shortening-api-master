@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+body header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+body header nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+body header nav .text-logo-div {
+  display: flex;
+  align-items: center;
+}
+body header nav .text-logo-div .text-logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: auto 1rem;
+  color: hsl(255deg, 11%, 22%);
+}
+body header nav .text-logo-div a {
+  font-weight: bold;
+  margin: auto 1.2rem;
+  color: hsl(257deg, 7%, 63%);
+  font-size: 0.9rem;
+}
+body header nav .login-signup-div {
+  display: flex;
+  align-items: center;
+}
+body header nav .login-signup-div a {
+  font-weight: bold;
+  margin: auto 1.2rem;
+  color: hsl(257deg, 7%, 63%);
+  font-size: 0.9rem;
+}
+body header nav .login-signup-div .signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(180deg, 66%, 49%);
+  color: hsla(0deg, 0%, 99%, 0.829);
+  width: 8rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+$Cyan: hsl(180, 66%, 49%);
+$DarkViolet: hsl(257, 27%, 26%);
+$Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish: hsla(0, 0%, 99%, 0.829);
+$GrayishViolet: hsl(257, 7%, 63%);
+$VeryDarkBlue: hsl(255, 11%, 22%);
+$VeryDarkViolet: hsl(260, 8%, 14%);
+$Poppins: 'Poppins', sans-serif;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+
+    a {
+        text-decoration: none;
+    }
+    header {
+        position: relative;
+        width: 100%;
+        top: 0;
+        left: 0;
+        nav {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 8rem;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+
+            .text-logo-div {
+
+                display: flex;
+                align-items: center;
+                .text-logo {
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                    margin: auto 1rem;
+                    color: $VeryDarkBlue;
+                }
+                a {
+                    font-weight: bold;
+                    margin: auto 1.2rem;
+                    color: $GrayishViolet;
+                    font-size: 0.9rem;
+                }
+            }
+            .login-signup-div {
+                display: flex;
+                align-items: center;
+
+                a {
+                    font-weight: bold;
+                    margin: auto 1.2rem;
+                    color: $GrayishViolet;
+                    font-size: 0.9rem;
+                }
+                .signup-btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $Cyan;
+                    color: $Grayish;
+                    width: 8rem;
+                    height: 2.5rem;
+                    padding: 0;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}
