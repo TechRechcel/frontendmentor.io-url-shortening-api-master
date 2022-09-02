@@ -76,5 +76,39 @@ body {
                 }
             }
         }
+
+        figure {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            figcaption {
+                position: relative;
+                left: 8rem;
+                h1 {
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                }
+                p {
+                    color: $GrayishViolet;
+                }
+                button {
+                    border: none;
+                    background: $Cyan;
+                    color: white;
+                    padding: 1rem 2.5rem;
+                    border-radius: 5rem;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+            }
+            img {
+                position: relative;
+                right: -13rem;
+            }
+
+        }
+        
     }
 }

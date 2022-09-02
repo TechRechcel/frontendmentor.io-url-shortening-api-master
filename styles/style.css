@@ -63,4 +63,35 @@ body header nav .login-signup-div .signup-btn {
   height: 2.5rem;
   padding: 0;
   border-radius: 30px;
+}
+body header figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+body header figure figcaption {
+  position: relative;
+  left: 8rem;
+}
+body header figure figcaption h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+body header figure figcaption p {
+  color: hsl(257deg, 7%, 63%);
+}
+body header figure figcaption button {
+  border: none;
+  background: hsl(180deg, 66%, 49%);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+body header figure img {
+  position: relative;
+  right: -13rem;
 }/*# sourceMappingURL=style.css.map */
