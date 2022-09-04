@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/90705492f7.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -21,7 +22,7 @@
 <main>
 
   <header>
-    <nav>
+    <nav id="for-desktop">
       <div class="text-logo-div">
       <span class="text-logo">Shortly</span>
         <a href="#" class="text-logo-link">Features</a>
@@ -30,137 +31,105 @@
       </div>
       <div class="login-signup-div">
         <a href="#" class="login-signup-btn">Login</a>
-        <a href="#" class="login-signup-btn signup-btn">Sign Up</a>
+        <a href="#" class="login-signup-btn signup-btn btn">Sign Up</a>
       </div></nav>
+
+      <!--second nav(hidden by default)-->
+      <nav class="nav2">
+        <h1>Shortly</h1>
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </nav>
+
       <figure>
         <figcaption>
           <h1>More than just shorter links</h1>
           <p>Build your brand’s recognition and get detailed insights 
             on how your links are performing.</p>
-          <button>Get Started</button>
+          <button class="btn">Get Started</button>
         </figcaption>
         <img src="/images/illustration-working.svg" alt="" class="working-img">
       </figure>      
   </header>
   <div class="url-shortener-div">
     <input type="text" placeholder="Shorten a link here...">
-    <button>Shorten It!</button>
+    <button class="btn">Shorten It!</button>
   </div>
   <section class="statistics">
     <div class="title-statistics">
       <h2>Advanced Statistics</h2>
-      <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+      <p>Track how your links are performing across the web with<br> our advanced statistics dashboard.</p>
     </div>
     <div class="statistics-img">
-      <div class="statistics-div"></div>  
-      <div class="statistics-div"></div>  
-      <div class="statistics-div"></div>  
+      <div class="statistics-div">
+        <div class="img-div"><img src="/images/icon-brand-recognition.svg" alt=""></div>
+        
+        <h4>Brand Recognition</h4>
+        <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content</p>
+      </div>  
+      <div class="statistics-div div2">
+        <div class="img-div"><img src="/images/icon-detailed-records.svg" alt=""></div>
+
+        <h4>Detailed Records</h4>
+        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+      </div>  
+      <div class="statistics-div div3">
+        <div class="img-div"><img src="/images/icon-fully-customizable.svg" alt=""></div>
+
+        <h4>Fully Customizable</h4>
+        <p>Improve brand awareness and content discoverability through customizable links, superchanging audience engagement.</p>
+      </div>  
     </div>
+    <hr>
   </section>
   <section class="boost-div">
-    <h3>Boost your links today</h3>
-    <button>Get Started</button>
+    <h5>Boost your links today</h5>
+    <button class="btn">Get Started</button>
   </section>
   <footer>
-    <div class="title-div">
-      <h4>Shortly</h4>
-      <span>Features</span>
-      <span>Features</span>
-      <span>Features</span>
-      <span>Features</span>
-      <div class="social-logo-div">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </div>
-    </div>
-    <div class="links-div">
-      <a href="#">Link Shortening</a>
-      <a href="#">Branded Links</a>
-      <a href="#">Analytics</a>
-      <a href="#">Blog</a>
-      <a href="#">Developers</a>
-      <a href="#">Support</a>
-      <a href="#">About</a>
-      <a href="#">Our Team</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact</a>
-    </div>
+ <div>
+<h5>Shortly</h5>
+ </div>
+ <div class="text-links-divs">
+  <div class="links-div">
+    <h6>Features</h6>
+    <a href="">Link Shortening</a>
+    <a href="">Branded Links</a>
+    <a href="">Analytics</a>
+  </div>
+  <div class="links-div">
+    <h6>Resources</h6>
+    <a href="">Blog</a>
+    <a href="">Developers</a>
+    <a href="">Support</a>
+  </div>
+  <div class="links-div">
+    <h6>Company</h6>
+    <a href="">About</a>
+    <a href="">Our Team</a>
+    <a href="">Careers</a>
+    <a href="">Contact</a>
+  </div>
+ </div>
+ <div class="social-icons-div">
+  <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  
+  
+  
+  
+ </div>
   </footer>
 
 </main>
 
 
-  
 
-
-<!--
- Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition 
-
-  Get Started
-  
-  Shorten a link here...
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
---> 
-  
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Lechcer Odelot</a>.
   </div>
 </body>
 </html>

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 $Cyan: hsl(180, 66%, 49%);
 $DarkViolet: hsl(257, 27%, 26%);
 $Red: hsl(0, 87%, 67%);
 $Gray: hsl(0, 0%, 75%);
-$Grayish: hsla(0, 0%, 99%, 0.829);
+$Grayish: #EFF1F7;
 $GrayishViolet: hsl(257, 7%, 63%);
+$GrayishGray: hsl(0, 2%, 16%);
 $VeryDarkBlue: hsl(255, 11%, 22%);
 $VeryDarkViolet: hsl(260, 8%, 14%);
 $Poppins: 'Poppins', sans-serif;
@@ -14,10 +16,18 @@ $Poppins: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Manrope', sans-serif;
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $Cyan;
+        color: white;
+        border-radius: 30px;
+        border: none;
+    }
 
     a {
         text-decoration: none;
@@ -42,7 +52,7 @@ body {
                 align-items: center;
                 .text-logo {
                     font-size: 1.7rem;
-                    font-weight: bold;
+                    font-weight: 800;
                     margin: auto 1rem;
                     color: $VeryDarkBlue;
                 }
@@ -64,15 +74,10 @@ body {
                     font-size: 0.9rem;
                 }
                 .signup-btn {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: $Cyan;
-                    color: $Grayish;
                     width: 8rem;
                     height: 2.5rem;
                     padding: 0;
-                    border-radius: 30px;
+                    color: white;
                 }
             }
         }
@@ -87,7 +92,9 @@ body {
                 position: relative;
                 left: 8rem;
                 h1 {
-                    font-size: 3.5rem;
+                    font-size: 3.7rem;
+                    font-weight: 700;
+                    color: $GrayishGray;
                     font-weight: 700;
                 }
                 p {
@@ -111,4 +118,212 @@ body {
         }
         
     }
+    .url-shortener-div {
+        background-image: url(/images/bg-shorten-desktop.svg);
+        background-color: $DarkViolet;
+        width: 75vw;
+        position: relative;
+        top: 4rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-position: center;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        input, button {
+            border: none;
+            border-radius: 0.5rem;
+            height: 3rem;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            
+        }
+        input {
+            width: 70%;
+            margin-right: 1rem;
+            
+        }
+        input::placeholder {
+            color: $Gray;
+        }
+        button {
+            width: 20%;
+            background-color: $Cyan;
+            color: white;
+            font-weight: 700;
+        }
+
+    }
+    .statistics {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background-color: $Grayish;
+        height: 100vh;
+        .title-statistics {
+            text-align: center;
+            h2 {
+                font-size: 2rem;
+                color: $GrayishGray;
+            }
+            p {
+                color: $Gray;
+            }
+        }
+        .statistics-img {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            .statistics-div {
+                background-color: white;
+                width: 20rem;
+                height: 15rem;
+                margin: 1rem;
+                border-radius: 5px;
+                padding: 0 1.5rem 1.5rem 1.5rem;
+                .img-div {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    background-color: #3B3054;
+                    padding: 1.5rem;
+                    position: relative;
+                    left: 1rem;
+                    top: -2.5rem;
+                    img {
+                        display: block;
+                        height: auto;
+                        width: 100%;
+                    }
+
+                }
+                h4 {
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                }
+                p {
+                    color: $Gray;
+                    font-size: 0.9rem;
+                    text-align: left;
+                }
+            }
+            .div2 {
+                position: relative;
+                top: 2rem;
+            }
+            .div3 {
+                position: relative;
+                top: 4rem;
+            }
+        }
+        hr {
+            height: 0.5rem;
+            width: 50%;
+            margin: 0 auto;
+            background-color: rgb(42,207,207);
+            border: none;
+            position: relative;
+            z-index: 0;
+            top: -6rem;
+     
+         }
+    }
+    .boost-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url(/images/bg-boost-desktop.svg);
+        background-color: #3B3054;
+        height: 15rem;
+        h5 {
+            font-size: 2.0rem;
+            font-weight: 800;
+            color: white;
+            position: relative;
+            top: 2rem;
+        }
+        
+        button {
+            padding: 0.8rem 2.5rem;
+            font-size: 1.1rem;
+            font-family: $Poppins;
+        }
+    }
+    footer {
+        background-color: hsl(260deg, 8%, 14%);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 5rem;
+        align-content: center;
+        a {
+            color: white;
+        }
+        
+        div {
+            
+            h5 {
+                font-size: 2rem;
+            }
+        }
+        .text-links-divs {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            margin-right: -3rem;
+            .links-div {
+                display: flex;
+                flex-flow: column nowrap;
+                margin: 0 2.5rem;
+                h6 {
+                    font-size: 0.7rem;
+                }
+                a {
+                    font-size: 0.7rem;
+                    color: $Gray;
+                    margin: 0.3rem 0;
+                }
+            
+        }
+
+
+    
+    }
+        .social-icons-div {
+
+            a {
+                margin: 1rem;
+                cursor: pointer;
+
+            
+            i {
+                color: white;
+                font-size: 1.6rem;
+                cursor: pointer;
+            }
+        }
+        }
+        
 }
+
+
+}
+
+
